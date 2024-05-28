@@ -77,10 +77,9 @@ class _ExerciseDetailScreenState extends State<ExerciseDetailScreen> {
             children: [
               Text(content),
               const SizedBox(height: 10),
-              if (questions['explanation'] !=
-                  null) // Check if explanation is not null
+              if (questions['explanation'] != null)
                 Image.network(
-                  "$baseURL/question/${questions['explanation']}",
+                  "$baseURL/explanation/${questions['explanation']}",
                   width: 200,
                   height: 200,
                 ),
